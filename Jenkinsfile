@@ -10,9 +10,7 @@ pipeline {
   stages {
     stage('Compile') {
       steps {
-        ansiColor('xterm') {
-          sh "sbt ';clean ;compile ;doc'"
-        }
+        sh "sbt ';clean ;compile ;doc'"
       }
     }
   }
