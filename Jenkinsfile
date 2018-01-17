@@ -1,5 +1,9 @@
 pipeline {
 
+  agent {
+
+  }
+  
   environment {
     // Ensure that build scripts recognise the environment they are running within
     CI = 'jenkins'
